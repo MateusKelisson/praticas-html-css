@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/*titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Mohave&display=swap');
+
+/*conteudo*/
+@import url('https://fonts.googleapis.com/css2?family=Mohave&family=Roboto+Condensed:ital@1&display=swap');
+
+:root{
+    --fonte_titulo : 'Mohave' ,cursive;
+    --fonte_cont : 'Roboto' , cursive;
+
+    --cor01 : #4D4D4D;
+    --cor02 : #2E2E2E;
+    --cor03 : #1F1F1F;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor01),var(--cor03) );
+    text-align: center;
+
+}
+
+header >h1{
+    font-family: var(--fonte_titulo);
+    font-size: 5vh;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+}
+
+header > p{
+    font-family: var(--fonte_cont);
+    font-size: 3vh;
+    color: white;
+   
+}
+
+nav{
+    background-color: var(--cor02);
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+main{
+    
+    position: relative;
+    max-width: 1000px;
+    height: 800px;
+    background-color: var(--cor03);
+    color: white;
+    padding-top:10px;
+    margin: auto;
+
+
+    background-image: url(../imagens/img01.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+main h1{
+    font-family: var(--fonte_titulo);
+    font-size: 10vh;
+    text-align: center;
+    padding-top: 30vh;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+   
+}
+
+main h2.subtitulo{
+    font-family: var(--fonte_cont);
+    font-size: 3.5vh;
+    text-align: center;
+    padding-bottom: 10px;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+}
+
+main h2#subtitulo{
+    font-family: var(--fonte_cont);
+    font-size: 3.5vh;
+    text-align: center;
+    padding-bottom: 10px;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+}
+
+main p {
+    font-family: var(--fonte_cont);
+    text-align: justify;
+    text-indent: 10px;
+    padding-bottom: 50px;
+    font-size: 3vh;
+}
+
+div.fundo{
+    background-color: rgba(0, 0, 0, 0.504);
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
