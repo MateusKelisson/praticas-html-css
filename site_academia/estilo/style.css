@@ -58,6 +58,7 @@ nav > a{
 nav > a:hover{
     text-decoration: underline;
     color: orange;
+    background-color: rgba(255, 166, 0, 0.411);
 }
 
 main{
@@ -77,6 +78,7 @@ main{
     background-size: cover;
    
 }
+
 
 main h1{
     font-family: var(--fonte_titulo);
