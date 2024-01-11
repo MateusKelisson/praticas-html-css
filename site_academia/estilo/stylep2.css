@@ -7,112 +7,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave&family=Roboto+Condensed:ital@1&display=swap');
 
 :root{
-    --fonte_titulo : 'Mohave' ,cursive;
-    --fonte_cont : 'Roboto' , cursive;
-
-    --cor01 : #4D4D4D;
-    --cor02 : #2E2E2E;
-    --cor03 : #1F1F1F;
+    --cor1:#7EC44D;
+    --cor2:#6F9156;
+    --cor3:#82F72F;
+    --cor4:#535E4B;
+    --cor5:#2D3329;
 }
 
 
 *{
     margin: 0px;
     padding: 0px;
-    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body,html{
     background-color: black;
 }
 
 header{
-    background-image: linear-gradient(to right , orange,var(--cor03));
+    margin: auto;
     text-align: center;
+    background-image: linear-gradient(to right,var(--cor3),var(--cor4));
+    font-weight: bold;
+    text-shadow:2px 1px 1px var(--cor2);
+
 }
 
-header h1{
-    font-family: var(--fonte_titulo) , Arial, Helvetica, sans-serif;
-    font-size: 5vh;
-    text-shadow: 1px 1px 1px black;
-}
-
-header p{
-    font-family: var(--fonte_cont);
-    text-shadow: 1px 1px 1px black;
-    font-size: 3vh;
-    color: wheat;
-    margin-top: -10px;
-}
 
 nav{
-    background-color: var(--cor03);
-    text-shadow: 1px 1px 1px black;
+    margin: auto;
+    background-color: red;
+    background-color: var(--cor4);
 }
 
 nav a{
+    margin-right: 20px;
     color: white;
     text-decoration: none;
-    padding-right: 30px;
+    font-weight: bold;
+    text-shadow:2px 2px 2px  black;
 }
 
 nav a:hover{
-    color: orange;
-    background-color: rgba(255, 166, 0, 0.293);
+    background-color: var(--cor3);
+    border-radius: 5px;
 }
 
 main{
     position: relative;
-    background-color: var(--cor01);
+    margin: auto;
+    max-width: 800px;
+    min-height: 600px;
+
+    background-color: var(--cor2);
     background-image: url(../imagens/img02.jpg);
-    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
-    min-height: 900px;
-    max-width: 1000px;
-    margin: auto;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 
 .planos{
-    margin: auto;
-    text-align: center;
-    max-width: 300px;
     display: inline-block;
-    margin-top: 20px;
-    padding-right: 30px;
-    font-family: var(--fonte_titulo) ,Arial, Helvetica, sans-serif;
+
+    text-align: center;
+    max-width: 250px;
     text-shadow: 1px 1px 1px black;
+    margin-left: 10px;    
     
 }
 
 .planos ul li{
-    text-align:justify;
-    font-size: 2vh;
+    text-align:left;
+    font-size: 1.5vh;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.5em;
     list-style: none;
-    font-family : var(--fonte_cont),cursive;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
 }
 
 .planos ul > .nao{
     text-decoration:line-through red  2px;
-
-    
 }
 
 #basico{
-    background-color: rgba(0, 255, 255, 0.575);
+    background-color:rgba(127, 196, 77, 0.503);
+    margin-top: 20px;
+
 }
 
 #avancado{
+    margin-top: 20px;
     background-color: rgba(255, 255, 0, 0.521);
+
 }
 
 #premium{
+    margin-top: 20px;
     background-color: rgba(255, 0, 0, 0.427);
+    
+}
+
+
+footer{
+    padding: 20px;
+    text-align: center;
+    text-shadow:1px 1px 1px  black;
+    background-image: linear-gradient(to right,var(--cor3),var(--cor4));
+}
+
+footer p{
+    color:var(--cor5);
+    font-weight: bold;}
+
+footer a{
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-color: var(--cor3);
+    border-radius: 5px;
 }
